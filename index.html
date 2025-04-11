@@ -1,12 +1,90 @@
-<!DOCTYPE html>
-<html lang="fr">
+<!DOCTYPE html><html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Destock Tout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destock Tout Outillage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background-image: url('IMG_20241221_145000.jpg'); /* Image de fond */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }/* Fond sombre en overlay pour lisibilité */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+}
+
+p.slogan {
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 2em;
+}
+
+.contact {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.contact p {
+  margin: 0.5em 0;
+  font-size: 1em;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  .contact {
+    font-size: 0.95em;
+  }
+}
+
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur Destock Tout</h1>
-  <p>Site en construction. Revenez bientôt !</p>
+  <div class="container">
+    <h1>Bienvenue chez Destock Tout Outillage</h1>
+    <p class="slogan">Magasin de vente de matériel toutes marques neuf et occasion<br>
+    en Outillage - Bricolage - Jardinage - Quincaillerie - Quad et motos de loisir<br>
+    <strong>Au meilleur prix !</strong></p><div class="contact">
+  <p><strong>Adresse :</strong> 165 rue Jean Jaurès, Escaudœuvres 59161</p>
+  <p><strong>Téléphone :</strong> <a href="tel:+33629628860">06 29 62 88 60</a></p>
+  <p><strong>Email :</strong> <a href="mailto:destocktout59161@gmail.com">destocktout59161@gmail.com</a></p>
+</div>
+
+  </div>
 </body>
 </html>
